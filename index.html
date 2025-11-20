@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestro Aniversario Mágico</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Audio para la música -->
+    <audio id="backgroundMusic" loop>
+        <source src="assets/Ariana Grande & Justin Bieber - Stuck with U (Traducida al español).mp3" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+
+    <!-- Controles de música -->
+    <div class="music-controls">
+        <button id="playBtn" class="music-btn">🎵 Reproducir Música</button>
+        <button id="pauseBtn" class="music-btn">⏸️ Pausar</button>
+    </div>
+
+    <!-- Modal para vista ampliada de imágenes -->
+    <div id="imageModal" class="modal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div class="modal-caption" id="modalCaption"></div>
+    </div>
+
+    <!-- Sección Hero -->
+    <section id="hero" class="hero-section">
+        <div class="hero-content">
+            <div class="pony-decoration left-pony">
+                <div class="pony-img">
+                    <img src="assets/pony1-removebg-preview.png" alt="Twilight Sparkle">
+                </div>
+                <p>Twilight Sparkle</p>
+            </div>
+            <div class="main-title">
+                <h1>Feliz Aniversario mi princesa</h1>
+                <p class="subtitle">Un poco de nuestra historia mágica</p>
+                <div class="hearts">💖💜💖</div>
+            </div>
+            <div class="pony-decoration right-pony">
+                <div class="pony-img">
+                    <img src="assets/pony2.webp" alt="Pinkie Pie">
+                </div>
+                <p>Pinkie Pie</p>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Desliza para descubrir</span>
+            <div class="arrow">↓</div>
+        </div>
+    </section>
+
+    <!-- Sección Nuestra Historia -->
+    <section id="historia" class="section historia-section">
+        <div class="container">
+            <h2 class="section-title">Nuestra Historia Mágica</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">Primer Encuentro</div>
+                    <div class="timeline-content">
+                        <h3>El día que nuestras vidas cambiaron</h3>
+                        <p>Aún no olvido el día en que te conocí. Al principio no nos caímos tan bien y hasta te olvidaste de traerme mi tesito, pero esa evaluación lo cambió todo. Desde ese momento, nuestra conexión comenzó a crecer de una forma que nunca imaginé. </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">Primera Cita</div>
+                    <div class="timeline-content">
+                        <h3>Nuestra primera aventura juntos</h3>
+                        <p>Recuerdo cada momento como si fuera ayer, las risas, las miradas y la conexión instantánea, todo ello que quedo marcado en una foto que quedara enmarcada con una portada espectacular c:.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">Hoy</div>
+                    <div class="timeline-content">
+                        <h3>Construyendo nuestro futuro</h3>
+                        <p>Cada día a tu lado es una nueva página en nuestro libro de aventuras, lleno de amor y magia. Y aunque el camino a veces tenga problemas o tormentas inesperadas, siempre serás tú… mi lugar seguro, mi elección y mi historia favorita.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Twilight Sparkle -->
+    <section id="twilight" class="section twilight-section">
+        <div class="container">
+            <div class="character-card">
+                <div class="character-image">
+                    <div class="pony-avatar twilight">
+                        <img src="assets/pony1-removebg-preview.png" alt="Twilight Sparkle">
+                    </div>
+                </div>
+                <div class="character-info">
+                    <h2>Twilight Sparkle</h2>
+                    <p class="character-desc">
+                       Como Twilight Sparkle, tu inteligencia y dedicación iluminan mi vida de una manera única. Eres mi brújula en este viaje mágico, siempre guiándome con tu sabiduría y corazón puro, mostrándome que el verdadero poder está en el amor y en creer en nosotros.
+                    </p>
+                    <div class="magic-elements">
+                        <div class="magic-item">
+                            <span class="magic-icon">📚</span>
+                            <span>Sabiduría</span>
+                        </div>
+                        <div class="magic-item">
+                            <span class="magic-icon">✨</span>
+                            <span>Magia</span>
+                        </div>
+                        <div class="magic-item">
+                            <span class="magic-icon">💜</span>
+                            <span>Lealtad</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Pinkie Pie -->
+    <section id="pinkie" class="section pinkie-section">
+        <div class="container">
+            <div class="character-card reverse">
+                <div class="character-info">
+                    <h2>Pinkie Pie</h2>
+                    <p class="character-desc">
+                        Tu espíritu alegre y divertido, como el de Pinkie Pie, llena cada día de risas y felicidad. Eres la celebración constante en mi vida, la chispa que convierte lo ordinario en extraordinario. Es eso lo que me vuelve loco de tenerte: la forma en que transformas cada momento, haciéndolo único, mágico y lleno de alegría.
+                    </p>
+                    <div class="party-elements">
+                        <div class="party-item">
+                            <span class="party-icon">🎉</span>
+                            <span>Fiesta</span>
+                        </div>
+                        <div class="party-item">
+                            <span class="party-icon">😄</span>
+                            <span>Risas</span>
+                        </div>
+                        <div class="party-item">
+                            <span class="party-icon">🎂</span>
+                            <span>Dulzura</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="character-image">
+                    <div class="pony-avatar pinkie">
+                        <img src="assets/pony2.webp" alt="Pinkie Pie">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Nuestros Makis -->
+    <section id="makis" class="section makis-section">
+        <div class="container">
+            <h2 class="section-title">Nuestros Momentos Favoritos</h2>
+            <p class="section-subtitle">Compartiendo deliciosos momentos juntos</p>
+            
+            <div class="maki-gallery">
+                <div class="maki-item">
+                    <div class="maki-icon">🍣</div>
+                    <h3>Nuestro Primer Maki</h3>
+                    <p>El inicio de nuestra actividad favorita, comer nuestros makis de saber olivo y parrillero</p>
+                </div>
+                <div class="maki-item">
+                    <div class="maki-icon">🥢</div>
+                    <h3>Compartiendo Sabores</h3>
+                    <p>Cada bocado es una nueva experiencia juntos, incluso cuando rompimos un vaso</p>
+                </div>
+                <div class="maki-item">
+                    <div class="maki-icon">❤️</div>
+                    <h3>Momentos Especiales</h3>
+                    <p>No solo ir a comer makis, sino ir a comer ramen, salir juntos, ver one piece, forman parte de nuestros momentos especiales</p>
+                </div>
+            </div>
+            
+            <div class="maki-message">
+                <h3>Nuestro Anime Favorito</h3>
+                <p>
+                    Como el océano azul que atraviesa Luffy en busca de su sueño, 
+                    mi amor por ti no tiene límites ni fronteras. Eres mi isla en este vasto mar, 
+                    y contigo siempre encontraré mi camino hacia el tesoro más valioso: tu corazón.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Galería de Fotos -->
+    <section id="galeria" class="section galeria-section">
+        <div class="container">
+            <h2 class="section-title">Nuestra Galería Mágica</h2>
+            <p class="section-subtitle">Recuerdos que atesoramos en el corazón</p>
+            
+            <div class="photo-grid" id="photoGrid">
+                <!-- Las fotos se cargarán dinámicamente con JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Mensaje Final -->
+    <section id="mensaje" class="section mensaje-section">
+        <div class="container">
+            <div class="love-message">
+                <h2>Para Mi Amor</h2>
+                <div class="message-content">
+                    <p>
+                        No hay palabras suficientes para expresar lo que siento por ti. Eres mi Twilight Sparkle y mi Pinkie Pie en una sola persona: inteligente, sabia, divertida y llena de magia. Como Luffy con su tripulación, mi vida tiene sentido solo porque tú estás a mi lado, siempre dándome fuerza y razón para seguir.
+                    </p>
+                    <p>
+                        Cada día a tu lado es una aventura, como un nuevo capítulo en *One Piece*. Cada comida de makis un tesoro, cada mirada un universo de posibilidades. Aunque hemos enfrentado tormentas y problemas en nuestro viaje, al igual que los piratas en busca del One Piece, sigo eligiéndote a ti. Quiero seguir navegando juntos, seguir mejorando y creciendo, para nosotros y para lo que somos.
+                    </p>
+                    <p>
+                        Eres mi razón para sonreír cada mañana y mi paz cada noche. Y en este aniversario, quiero recordarte que mi amor por ti sigue creciendo con cada amanecer, se fortalece con cada desafío y brilla más con cada risa compartida. Lo que siento por ti no cambiará, porque tú eres mi tesoro más valioso.
+                    </p>
+                </div>
+                <div class="closing">
+                    <p class="promise">Prometo amarte, respetarte y acompañarte en cada paso de nuestro viaje mágico, sin importar lo que el mar nos depare.</p>
+                    <div class="signature">
+                        <p>Con todo mi amor,</p>
+                        <p class="name">Jherson (Tu tonoto favorito)</p>
+                    </div>
+                </div>
+                <div class="final-hearts">💖💜💖💜💖</div>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
