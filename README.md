@@ -9,4 +9,4 @@ Una página especial creada con mucho amor para celebrar nuestro aniversario.
 - Efectos de confeti
 - Temática de Twilight Sparkle y Pinkie Pie
 
-*Hecho con ❤️ para [Nombre de tu enamorada]*
+*Hecho con ❤️ para Angelina*
